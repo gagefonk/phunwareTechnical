@@ -167,10 +167,7 @@ class DetailView: UIViewController {
         let item = "\(sharedEvent.title), \(sharedEvent.location), \(sharedEvent.date), \(sharedEvent.description)"
         let activityController = UIActivityViewController(activityItems: [item], applicationActivities: nil)
         activityController.excludedActivityTypes = [.print, .addToReadingList, .airDrop, .addToReadingList, .assignToContact, .copyToPasteboard, .markupAsPDF, .openInIBooks, .postToVimeo, .postToWeibo, .postToFlickr, .postToTwitter, .postToFacebook, .postToTencentWeibo, .saveToCameraRoll]
-        //It didnt specify if I was supposed to actually share anything so I didnt implenment it(Outside of displaying it)
         self.present(activityController, animated: true)
-        
-
     }
 
 }
